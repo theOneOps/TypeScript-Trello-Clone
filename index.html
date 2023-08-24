@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Workspace</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="container">
+
+        <div class="global-container" draggable="true">
+            <div class="item-container">
+                <div class="item-title-container">
+                    <h2>Current</h2>
+                    <button class="remove-container-btn">X</button>
+                </div>
+                <ul class="item-list"></ul>
+            </div>
+            <div class="form-container">
+                <div class="create-item-form   ">
+                    <button class="remove-create-item-btn">Add a new Item</button>
+                </div>
+                <div class="item-form-container   active">
+                    <form class="form-create-item">
+                        <input type="text" name="item-name" id="item-name" placeholder="Item name" class="input-create-item">
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="global-create-btn-container">
+            <div class="create-container-form    ">
+                <button class="add-container-btn">Add another Container</button>
+            </div>
+            <div class="global-container-form active">
+                <form class="form-container-creation">
+                    <input type="text" name="container-name" class="input-title-container" id="container-name" placeholder="Container name">
+                    <button type="submit" class="submit-creation-container">Submit</button>
+                </form>
+            </div>
+        </div>
+       
+    </div>
+    <script src="./Output/script.js"></script>
+</body>
+</html>
